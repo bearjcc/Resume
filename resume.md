@@ -49,8 +49,7 @@ With 10+ years in design automation (SOLIDWORKS, DriveWorks) and web development
     - Dramatically improved UI development efficiency in DriveWorks by creating a custom plugin that provided dynamic access to 14,000+ SVG icons, eliminating manual icon management and reducing project file clutter.
     - Developed a comprehensive DriveWorks unit conversion plugin supporting 162 units across 17 types (e.g., length, mass, temperature, file size), promoting DRY principles and enabling robust, error-free calculations for engineering, internationalization, and UI design.
     - Addressed critical gaps in DriveWorks' native user management by a creating project with secure, web-based self-service account capabilities (registration, password reset, email verification) and robust administrative oversight, leading to improved security, reduced admin workload, and greater user independence for multiple deployments.
-    - Pioneered UI/UX processes, including use of Figma for rapid prototyping and CSS for custom styling in DriveWorks and Integration Theme
-    - Presented UX Design Process at DriveWorks World 2024
+    - Championed the adoption of web-standard UI/UX design principles (Figma, CSS) for DriveWorks projects, creating intuitive, brand-consistent interfaces that significantly boosted user adoption, minimized training needs, and enabled expansion to sales and public-facing configurators; presented this transformative approach at DriveWorks World 2024.
     - Established self-hosted tools including internal knowledge wiki and AI RAG tooling
     - Extended capabilities of DriveWorks' Corporate Site template, and implemented and maintained 20+ sites
 
