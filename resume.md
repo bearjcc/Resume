@@ -31,6 +31,13 @@ Whangārei, New Zealand
 
 With 10+ years in design automation (SOLIDWORKS, DriveWorks) and web development for manufacturing, I have a track record of creating impactful solutions, from custom DriveWorks plugins and project templates to full system automations. Eager to contribute to a New Zealand tech company focused on practical automation and process optimisation.
 
+## Skills
+
+- **CAD/Automation:** DriveWorks, SOLIDWORKS, FEA Simulation
+- **Web/Programming:** HTML, CSS, JavaScript, TypeScript, Markdown, PHP, JSON, XML, VB/VBA, C/C++/Arduino
+- **Tools:** IIS, Figma, VS Code/Cursor, GitHub, Wiki.js, DokuWiki, CPanel, Microsoft 365, Google Drive, GIMP
+- **Soft Skills:** Project Management, Technical Support & Training, UI/UX Design, STEM Education & Mentoring
+
 ## Professional Experience
 
 ### Technical Solutions Consultant
@@ -84,13 +91,6 @@ With 10+ years in design automation (SOLIDWORKS, DriveWorks) and web development
 - Led full lifecycle digital transformation from paper inventory to online, mobile-friendly automated system using PHP
 - Gained hands-on experience in manufacturing processes, from design through production
 - Learned fundamentals of manual and CNC machining, producing custom parts for various industries
-
-## Skills
-
-- **CAD/Automation:** DriveWorks, SOLIDWORKS, FEA Simulation
-- **Web/Programming:** HTML, CSS, JavaScript, TypeScript, Markdown, PHP, JSON, XML, VB/VBA, C/C++/Arduino
-- **Tools:** IIS, Figma, VS Code/Cursor, GitHub, Wiki.js, DokuWiki, CPanel, Microsoft 365, Google Drive, GIMP
-- **Soft Skills:** Project Management, Technical Support & Training, UI/UX Design, STEM Education & Mentoring
 
 ## Certifications
 
