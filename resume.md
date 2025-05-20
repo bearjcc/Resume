@@ -25,102 +25,83 @@ header-includes: |
 
 Whangārei, New Zealand
 
-**Email:** [bearjcc@proton.me](mailto:bearjcc@proton.me) \| **Phone:** +64 020-476-3145 \| **LinkedIn:** [Joseph Caswell](https://www.linkedin.com/in/bearjcc/) \| **GitHub:** [jccaswell](https://github.com/jccaswell)
+**Email:** [bearjcc@proton.me](mailto:bearjcc@proton.me) \| **Phone:** +64 020-476-3145 \| **LinkedIn:** [Joseph Caswell](https://www.linkedin.com/in/bearjcc/) \| **GitHub:** [bearjcc](https://github.com/bearjcc)
 
 ## Professional Summary
 
-Highly motivated and skilled design automation specialist, recently relocated from the US to New Zealand. 10 years of experience in the manufacturing industry. Certified SOLIDWORKS Expert and DriveWorks Professional, with additional experience in web development, UI/UX design, technical support, teaching, and project management. Passionate about contributing technical expertise and a strong work ethic to a dynamic team in the New Zealand tech industry, and eager to learn new skills and refine existing ones. 
+With 10+ years in design automation (SOLIDWORKS, DriveWorks) and web development for manufacturing, I have a track record of creating impactful solutions, from custom DriveWorks plugins and project templates to full system automations. Eager to contribute to a New Zealand tech company focused on practical automation and process optimisation.
 
 ## Professional Experience
 
 ### Technical Solutions Consultant
 **TPM** | Greenville, SC, USA / Whangārei, NZ (Remote) | October 2021 – Present  
 *Full-time until April 2025; currently part-time independent contractor (remote) due to relocation*
+*Consultancy for a SOLIDWORKS & DriveWorks Value-Added Reseller (VAR), focusing on design automation, UI/UX, and web technologies.*
 
-- **Internal DriveWorks development for optimising deployment and efficiency**
-    - Created custom plugins for custom colored icon integration and unit conversion
-    - Developed DriveWorks project templates including robust Account Management
+- **Internal Process development for optimising DriveWorks deployment and staff efficiency**
+    - Enabled custom coloured icon integration and seamless unit conversion in DriveWorks by developing bespoke plugins.
+    - Developed DriveWorks project templates, including Account Management enabling web-based, mobile-friendly user self-registration, password reset, and granular administrative oversight of user access and roles.
     - Pioneered UI/UX processes, including use of Figma for rapid prototyping and CSS for custom styling in DriveWorks and Integration Theme
         - Presented UX Design Process at DriveWorks World 2024
-    - Established self-hosted internal knowledge wiki and AI RAG tooling
-    - Developed, maintained, and implemented custom Integration Theme website template and SOP for variety of customers
+    - Established self-hosted tools including internal knowledge wiki and AI RAG tooling
+    - Extended capabilities of DriveWorks' Corporate Site template, and implemented and maintained 20+ sites
 
-- **Lead and assisted DriveWorks implementations for manufacturing clients**
-    - SOLIDWORKS, email, and document automation
-    - Custom device-responsive user interfaces
+- **End-to-end DriveWorks implementation and automation**
+    - Led full project lifecycle from requirements gathering to deployment and training
+    - Automated SOLIDWORKS, email, and document processes for improved efficiency
+    - Developed custom device-responsive branded user interfaces
     - Implemented public, private, and DMZ DriveWorks Live sites
+    - Created comprehensive documentation and training materials
 
 - **Delivered training and technical support for SOLIDWORKS**
     - Supported WNC SOLIDWORKS User Group as a reseller, including custom training and presentations
 
 ### Tool Designer
 **Kearfott Corporation** | Black Mountain, NC, USA | March 2021 – October 2021
+*Defence manufacturer of hyper-precise guidance systems; designed tooling for low-volume, hand-assembled components.*
 
 - Designed, modelled, and drafted tooling for hyper-precision guidance systems used by American and Korean militaries
 - Developed tools to measure accuracy and assist with high-precision hand assembly
 - Collaborated closely with CNC programmers and machinists to achieve cost-efficient, tight-tolerance manufacturing
 
-### Mechanical Tool Designer
+### Tool Designer
 **Auria Solutions** | Old Fort, NC, USA | October 2017 – March 2021
+*Global Tier 1 automotive supplier (vehicle interiors & insulation); designed tooling for high-volume, automated manufacturing processes.*
 
 - Spearheaded process optimization initiatives, including:
     - Incorporating additive manufacturing into prototyping and production workflows
     - Developing custom SOLIDWORKS and Excel macros/templates to automate and accelerate design tasks
     - Creating custom Excel and CMD applications for simulation and data management
     - Using ProCAST simulation to optimize injection molding designs, reducing machining time and minimizing shot waste
-- Designed, modeled, simulated, and drafted automotive manufacturing tools
+- Designed, modelled, simulated, and drafted automotive manufacturing tools
 - Generated CAD files for CNC machining and operated 3D printers for prototyping
 - Designed and developed a website for internal software training materials
-- Participated in a Kanban process improvement project that contributed to over $2 million in annual savings for the facility (personally responsible for ~$100,000/year in savings as a junior team member)
-
-### Teaching Assistant
-**University of North Carolina Asheville** | Asheville, NC, USA | October 2015 - April 2017
-
-- Assisted in Mechatronics and SOLIDWORKS courses, including lab instruction, drafting review, and video content
-- Supported students in robot design and programming using SOLIDWORKS and Arduino (C++)
+- Participated in a Kanban project that contributed to $2+ million in annual savings for a single facility
 
 ### Engineering Intern  
 **EMC of NC, Inc** | Wake Forest, NC, USA | May 2014 – August 2014, May 2015 – August 2015
 
-- Pioneered digital transformation from inefficient paper inventory to an online, mobile-friendly automated inventory system using PHP
-- Learned fundamentals of manual and CNC mill and lathe as a junior machinist, producing custom parts for various industries
-
-## Certifications
-
-### Dassault Systèmes / SOLIDWORKS
-- Certified SOLIDWORKS Expert – Mechanical Design (CSWE), 2022
-- Certified SOLIDWORKS Professional – Mechanical Design (CSWP), 2021
-    - Sheet Metal, Surfacing, Drawing Tools, Weldments (2021–2022)
-- SOLIDWORKS Simulation Professional 2022
-- Visualize Specialist, 2022
-- Technical Support Specialist, 2022
-- 3DEXPERIENCE 3D Creator Associate, 2022
-- 3DEXPERIENCE 3D Sculptor Associate, 2022
-- 3DEXPERIENCE Lean Team Player Associate, 2022
-
-### DriveWorks
-- Certified DriveWorks Professional, 2023
-- Certified DriveWorks Solo, 2022
-- Certified DriveWorksXpress Associate, 2022
-
-### W3Schools
-- Certified in Node.js, 2025
-- Certified in PHP, 2024
-- Certified in TypeScript, JavaScript, HTML, CSS, and XML, 2023
-
-### Other
-- Foundations of User Experience (UX) Design (Google/Coursera), 2023
+- Led full lifecycle digital transformation from paper inventory to online, mobile-friendly automated system using PHP
+- Gained hands-on experience in manufacturing processes, from design through production
+- Learned fundamentals of manual and CNC machining, producing custom parts for various industries
 
 ## Skills
 
-- **CAD/Automation:** DriveWorks, SOLIDWORKS
+- **CAD/Automation:** DriveWorks, SOLIDWORKS, FEA Simulation
 - **Web/Programming:** HTML, CSS, JavaScript, TypeScript, Markdown, PHP, JSON, XML, VB/VBA, C/C++/Arduino
-- **Tools:** Figma, GitHub, Wiki.js, DokuWiki, CPanel, VS Code, Microsoft 365, Google Drive, GIMP
+- **Tools:** IIS, Figma, VS Code/Cursor, GitHub, Wiki.js, DokuWiki, CPanel, Microsoft 365, Google Drive, GIMP
 - **Soft Skills:** Project Management, Technical Support & Training, UI/UX Design, STEM Education & Mentoring
 
+## Certifications
+
+- **SOLIDWORKS:** Certified Expert (CSWE), Professional (CSWP) with specialities in Simulation, Visualize, and Technical Support
+- **DriveWorks:** Certified Professional, Solo, and Xpress Associate
+- **Web Development:** W3Schools Certified in Node.js, PHP, TypeScript, JavaScript, HTML, CSS, and XML
+- **Other:** Foundations of User Experience (UX) Design (Google/Coursera)
+
 ## Education
-- **Mechatronics Engineering** – UNC Asheville / North Carolina State University Joint Bachelor program (2015 – 2017)
-- **Mechanical Engineering** – Wake Technical Community College Associate program (2012 – 2015)
+- **Mechatronics Engineering** – UNC Asheville / North Carolina State University Joint Bachelor programme (2015 – 2017)
+- **Mechanical Engineering** – Wake Technical Community College Associate programme (2012 – 2015)
 
 ## Honors and Awards
 
