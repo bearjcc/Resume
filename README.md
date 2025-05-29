@@ -87,7 +87,9 @@ This repository includes GitHub Actions that automatically build and deploy your
 
 ## Usage
 
-### Build Specific Formats
+### Local Building (Windows)
+Use the PowerShell script for local development and testing:
+
 ```powershell
 .\build.ps1 html      # HTML only
 .\build.ps1 pdf       # PDF only (requires LaTeX)
@@ -95,14 +97,14 @@ This repository includes GitHub Actions that automatically build and deploy your
 .\build.ps1 plain     # Plain text only
 ```
 
-### Clean Generated Files
-```powershell
-.\build.ps1 clean
-```
+### Automated Building (GitHub)
+GitHub Actions automatically builds and deploys all formats when you push to the main branch. No manual intervention needed!
 
-### Get Help
+### Other Commands
+
 ```powershell
-.\build.ps1 help
+.\build.ps1 clean     # Clean generated files
+.\build.ps1 help      # Get Help
 ```
 
 ## Customization
