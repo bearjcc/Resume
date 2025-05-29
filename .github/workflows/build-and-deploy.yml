@@ -1,0 +1,99 @@
+name: Build and Deploy Resume
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Setup Pandoc
+      uses: r-lib/actions/setup-pandoc@v2
+      with:
+        pandoc-version: 'latest'
+        
+    - name: Install LaTeX
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+        
+    - name: Build Resume
+      run: |
+        # Create output directory
+        mkdir -p output
+        
+        # Build PDF
+        pandoc resume-source.md \
+          --template=resume.pandoc.tex \
+          --pdf-engine=pdflatex \
+          -o output/resume.pdf
+          
+        # Build HTML
+        pandoc resume-source.md \
+          --template=resume.pandoc.html \
+          -o output/resume.html
+          
+        # Build Markdown
+        pandoc resume-source.md \
+          --template=resume.pandoc.markdown \
+          -o output/resume.md
+          
+        # Build Plain Text
+        pandoc resume-source.md \
+          --template=resume.pandoc.plain \
+          -o output/resume.txt
+          
+        # Create an index.html that redirects to the PDF
+        cat > output/index.html << 'EOF'
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Joseph C. Caswell - Resume</title>
+            <meta http-equiv="refresh" content="0;url=resume.pdf">
+            <style>
+                body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+                .container { max-width: 600px; margin: 0 auto; }
+                .download-links { margin: 20px 0; }
+                .download-links a { 
+                    display: inline-block; 
+                    margin: 10px; 
+                    padding: 10px 20px; 
+                    background: #007acc; 
+                    color: white; 
+                    text-decoration: none; 
+                    border-radius: 5px; 
+                }
+                .download-links a:hover { background: #005999; }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>Joseph C. Caswell</h1>
+                <h2>Technical Consultant & Design Automation Specialist</h2>
+                <p>If you are not automatically redirected, click the links below:</p>
+                <div class="download-links">
+                    <a href="resume.pdf">Download PDF</a>
+                    <a href="resume.html">View HTML</a>
+                    <a href="resume.md">View Markdown</a>
+                    <a href="resume.txt">View Text</a>
+                </div>
+            </div>
+        </body>
+        </html>
+        EOF
+        
+    - name: Deploy to GitHub Pages
+      if: github.ref == 'refs/heads/main'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./output
+        force_orphan: true 

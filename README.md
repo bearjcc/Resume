@@ -9,6 +9,7 @@ A modern, version-controlled resume system that generates multiple output format
 - **Professional Styling**: Beautiful, professional templates for each format
 - **Version Control Friendly**: Plain text source works perfectly with Git
 - **Easy Updates**: Change your data once, regenerate all formats
+- **Auto-Deploy**: Automatically builds and hosts your resume on GitHub Pages
 
 ## Requirements
 
@@ -46,6 +47,43 @@ A modern, version-controlled resume system that generates multiple output format
    - `resume.pdf` - Professional PDF (requires LaTeX)
    - `resume.md` - Clean Markdown
    - `resume.txt` - Plain text
+
+## Sharing Your Resume
+
+### GitHub Pages Auto-Deployment
+
+This repository includes GitHub Actions that automatically build and deploy your resume to GitHub Pages whenever you push changes. This gives you shareable links that always point to your latest resume:
+
+**Your Resume URLs:**
+- **Main URL**: `https://bearjcc.github.io/Resume/` (auto-redirects to PDF)
+- **PDF**: `https://bearjcc.github.io/Resume/resume.pdf`
+- **HTML**: `https://bearjcc.github.io/Resume/resume.html`
+- **Markdown**: `https://bearjcc.github.io/Resume/resume.md`
+- **Text**: `https://bearjcc.github.io/Resume/resume.txt`
+
+**Setup Steps:**
+1. **Enable GitHub Pages**:
+   - Go to your repository Settings → Pages
+   - Source: "Deploy from a branch"
+   - Branch: `gh-pages` (will be created automatically)
+   - Folder: `/ (root)`
+
+2. **Push Your Changes**:
+   ```powershell
+   git add .
+   git commit -m "feat: enable GitHub Pages auto-deployment"
+   git push origin main
+   ```
+
+3. **Wait for Build** (about 2-3 minutes):
+   - Check the "Actions" tab in your GitHub repository
+   - Once the workflow completes, your resume will be live!
+
+**Benefits:**
+- 🔗 **Permanent Links**: Share one URL that always has your latest resume
+- 🚀 **Auto-Updates**: Every commit automatically updates your live resume
+- 📱 **Mobile-Friendly**: HTML version works great on any device
+- 📄 **Multiple Formats**: Recipients can choose their preferred format
 
 ## Usage
 
