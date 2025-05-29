@@ -1,0 +1,94 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage{titlesec}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Custom colors
+\definecolor{headercolor}{RGB}{70,130,180}
+\definecolor{rulecolor}{RGB}{200,200,200}
+
+% Custom section formatting
+\titleformat{\section}{\large\bfseries\color{headercolor}}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
+
+% Custom commands for formatting
+\newcommand{\resumetitle}[1]{\begin{center}\textbf{\LARGE #1}\end{center}\vspace{0.2em}}
+\newcommand{\contact}[1]{\begin{center}#1\end{center}\vspace{0.5em}}
+\newcommand{\jobheader}[4]{\textbf{#1} \hfill \textbf{#4} \\ \textit{#2} \\ #3\vspace{0.2em}}
+
+\begin{document}
+
+% Title and contact info
+\resumetitle{$name$}
+\contact{$location$ $$\cdot$$ $email$ $$\cdot$$ $phone$$if(linkedin)$ $$\cdot$$ \url{$linkedin$}$endif$$if(github)$ $$\cdot$$ \url{$github$}$endif$}
+
+$if(summary)$
+\section{Professional Summary}
+$summary$
+$endif$
+
+$if(skills)$
+\section{Skills}
+$for(skills)$
+\textbf{$skills.category$:} $for(skills.items)$$skills.items$$sep$, $endfor$
+
+$endfor$
+$endif$
+
+$if(certifications)$
+\section{Certifications}
+$for(certifications)$
+\textbf{$certifications.category$:} $for(certifications.items)$$certifications.items$$sep$, $endfor$
+
+$endfor$
+$endif$
+
+$if(education)$
+\section{Education}
+$for(education)$
+\textbf{$education.degree$} \hfill $education.year$ \\
+\textit{$education.institution$}
+
+$endfor$
+$endif$
+
+$if(honors)$
+\section{Honors}
+$for(honors)$
+\textbf{$honors.title$} \hfill $honors.date$
+
+$endfor$
+$endif$
+
+$if(experience)$
+\section{Professional Experience}
+$for(experience)$
+\jobheader{$experience.title$}{$experience.company$}{$experience.location$}{$experience.dates$}
+
+$if(experience.description)$
+$experience.description$
+
+$endif$
+$if(experience.achievements)$
+\begin{itemize}[leftmargin=*,noitemsep,topsep=0.2em]
+$for(experience.achievements)$
+\item $experience.achievements$
+$endfor$
+\end{itemize}
+$endif$
+
+$endfor$
+$endif$
+
+$if(references)$
+\section{References}
+$references$
+$endif$
+
+\end{document} 

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$name$ - Resume</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            margin: 40px auto;
+            max-width: 650px;
+            line-height: 1.6;
+            font-size: 18px;
+            color: #444;
+            padding: 0 10px;
+        }
+        
+        h1, h2, h3 {
+            line-height: 1.2;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.2em;
+            text-align: center;
+            border-bottom: 2px solid #444;
+            padding-bottom: 0.3em;
+        }
+        
+        h2 {
+            color: #333;
+            font-size: 1.5em;
+            margin-top: 2em;
+            margin-bottom: 0.5em;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 0.2em;
+        }
+        
+        h3 {
+            color: #555;
+            font-size: 1.2em;
+            margin-top: 1.5em;
+            margin-bottom: 0.3em;
+        }
+        
+        .contact-info {
+            text-align: center;
+            margin-bottom: 2em;
+            font-size: 0.9em;
+            color: #666;
+        }
+        
+        .contact-info span {
+            margin: 0 10px;
+        }
+        
+        .skills {
+            margin-bottom: 1em;
+        }
+        
+        .skill-category {
+            margin-bottom: 0.8em;
+        }
+        
+        .skill-category strong {
+            color: #333;
+        }
+        
+        .experience-item {
+            margin-bottom: 2em;
+        }
+        
+        .job-header {
+            margin-bottom: 0.5em;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .company {
+            font-style: italic;
+            color: #555;
+        }
+        
+        .dates {
+            float: right;
+            color: #777;
+            font-size: 0.9em;
+        }
+        
+        .location {
+            color: #777;
+            font-size: 0.9em;
+        }
+        
+        .description {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 0.5em;
+        }
+        
+        ul {
+            margin-top: 0.5em;
+        }
+        
+        li {
+            margin-bottom: 0.3em;
+        }
+        
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        @media print {
+            body {
+                margin: 0;
+                max-width: none;
+                font-size: 12pt;
+            }
+            
+            h1 {
+                font-size: 18pt;
+            }
+            
+            h2 {
+                font-size: 14pt;
+            }
+            
+            .dates {
+                float: none;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>$name$</h1>
+    
+    <div class="contact-info">
+        <span>$location$</span>
+        <span>•</span>
+        <span><a href="mailto:$email$">$email$</a></span>
+        <span>•</span>
+        <span>$phone$</span>
+        $if(linkedin)$
+        <span>•</span>
+        <span><a href="$linkedin$">LinkedIn</a></span>
+        $endif$
+        $if(github)$
+        <span>•</span>
+        <span><a href="$github$">GitHub</a></span>
+        $endif$
+    </div>
+
+    $if(summary)$
+    <h2>Professional Summary</h2>
+    <p>$summary$</p>
+    $endif$
+
+    $if(skills)$
+    <h2>Skills</h2>
+    <div class="skills">
+        $for(skills)$
+        <div class="skill-category">
+            <strong>$skills.category$:</strong> $for(skills.items)$$skills.items$$sep$, $endfor$
+        </div>
+        $endfor$
+    </div>
+    $endif$
+
+    $if(certifications)$
+    <h2>Certifications</h2>
+    <div class="skills">
+        $for(certifications)$
+        <div class="skill-category">
+            <strong>$certifications.category$:</strong> $for(certifications.items)$$certifications.items$$sep$, $endfor$
+        </div>
+        $endfor$
+    </div>
+    $endif$
+
+    $if(education)$
+    <h2>Education</h2>
+    $for(education)$
+    <div class="experience-item">
+        <div class="job-header">
+            <span class="job-title">$education.degree$</span>
+            <span class="dates">$education.year$</span>
+        </div>
+        <div class="company">$education.institution$</div>
+    </div>
+    $endfor$
+    $endif$
+
+    $if(honors)$
+    <h2>Honors</h2>
+    $for(honors)$
+    <div class="experience-item">
+        <div class="job-header">
+            <span class="job-title">$honors.title$</span>
+            <span class="dates">$honors.date$</span>
+        </div>
+    </div>
+    $endfor$
+    $endif$
+
+    $if(experience)$
+    <h2>Professional Experience</h2>
+    $for(experience)$
+    <div class="experience-item">
+        <div class="job-header">
+            <span class="job-title">$experience.title$</span>
+            <span class="dates">$experience.dates$</span>
+        </div>
+        <div class="company">$experience.company$</div>
+        <div class="location">$experience.location$</div>
+        $if(experience.description)$
+        <div class="description">$experience.description$</div>
+        $endif$
+        $if(experience.achievements)$
+        <ul>
+            $for(experience.achievements)$
+            <li>$experience.achievements$</li>
+            $endfor$
+        </ul>
+        $endif$
+    </div>
+    $endfor$
+    $endif$
+
+    $if(references)$
+    <h2>References</h2>
+    <p>$references$</p>
+    $endif$
+</body>
+</html> 
