@@ -151,17 +151,33 @@
         <span>$phone$</span>
         $if(linkedin)$
         <span>•</span>
-        <span><a href="$linkedin$">LinkedIn</a></span>
+        <span><a href="https://linkedin.com/in/bearjcc">LinkedIn</a></span>
         $endif$
         $if(github)$
         <span>•</span>
-        <span><a href="$github$">GitHub</a></span>
+        <span><a href="https://github.com/bearjcc">GitHub</a></span>
         $endif$
     </div>
 
     $if(summary)$
     <h2>Professional Summary</h2>
     <p>$summary$</p>
+    $endif$
+
+    $if(key_accomplishments)$
+    <h2>Key Accomplishments</h2>
+    <ul>
+        $for(key_accomplishments)$
+        <li>
+            <strong>$key_accomplishments.title$</strong>
+            <ul>
+                $for(key_accomplishments.description)$
+                <li>$key_accomplishments.description$</li>
+                $endfor$
+            </ul>
+        </li>
+        $endfor$
+    </ul>
     $endif$
 
     $if(skills)$
@@ -191,7 +207,7 @@
     $for(education)$
     <div class="experience-item">
         <div class="job-header">
-            <span class="job-title">$education.degree$</span>
+            <span class="job-title">$education.coursework$</span>
             <span class="dates">$education.year$</span>
         </div>
         <div class="company">$education.institution$</div>
@@ -199,14 +215,19 @@
     $endfor$
     $endif$
 
-    $if(honors)$
-    <h2>Honors</h2>
-    $for(honors)$
+    $if(leadership_awards)$
+    <h2>Leadership & Awards</h2>
+    $for(leadership_awards)$
     <div class="experience-item">
         <div class="job-header">
-            <span class="job-title">$honors.title$</span>
-            <span class="dates">$honors.date$</span>
+            <span class="job-title">$leadership_awards.title$</span>
+            <span class="dates">$leadership_awards.date$</span>
         </div>
+        <ul>
+            $for(leadership_awards.description)$
+            <li>$leadership_awards.description$</li>
+            $endfor$
+        </ul>
     </div>
     $endfor$
     $endif$
@@ -224,10 +245,10 @@
         $if(experience.description)$
         <div class="description">$experience.description$</div>
         $endif$
-        $if(experience.achievements)$
+        $if(experience.key_responsibility)$
         <ul>
-            $for(experience.achievements)$
-            <li>$experience.achievements$</li>
+            $for(experience.key_responsibility)$
+            <li>$experience.key_responsibility$</li>
             $endfor$
         </ul>
         $endif$

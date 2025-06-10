@@ -3,8 +3,8 @@
 **Location:** $location$  
 **Email:** $email$  
 **Phone:** $phone$  
-$if(linkedin)$**LinkedIn:** $linkedin$  $endif$
-$if(github)$**GitHub:** $github$  $endif$
+$if(linkedin)$**LinkedIn:** linkedin.com/in/bearjcc  $endif$
+$if(github)$**GitHub:** github.com/bearjcc  $endif$
 
 ---
 
@@ -13,6 +13,17 @@ $if(summary)$
 
 $summary$
 
+$endif$
+$if(key_accomplishments)$
+## Key Accomplishments
+
+$for(key_accomplishments)$
+- **$key_accomplishments.title$**
+$for(key_accomplishments.description)$
+  - $key_accomplishments.description$
+$endfor$
+
+$endfor$
 $endif$
 $if(skills)$
 ## Skills
@@ -34,16 +45,19 @@ $if(education)$
 ## Education
 
 $for(education)$
-**$education.degree$**  
+**$education.coursework$**  
 *$education.institution$* — $education.year$
 
 $endfor$
 $endif$
-$if(honors)$
-## Honors
+$if(leadership_awards)$
+## Leadership & Awards
 
-$for(honors)$
-**$honors.title$** — $honors.date$
+$for(leadership_awards)$
+**$leadership_awards.title$** — $leadership_awards.date$  
+$for(leadership_awards.description)$
+- $leadership_awards.description$
+$endfor$
 
 $endfor$
 $endif$
@@ -59,9 +73,9 @@ $if(experience.description)$
 $experience.description$
 
 $endif$
-$if(experience.achievements)$
-$for(experience.achievements)$
-- $experience.achievements$
+$if(experience.key_responsibility)$
+$for(experience.key_responsibility)$
+- $experience.key_responsibility$
 $endfor$
 
 $endif$
